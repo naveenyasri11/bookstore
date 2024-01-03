@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Book 1",
+      "description": "This is the description of Book 1.",
+      "price": 19.99,
+      "discount": 10,
+      "image": "assets/images/novel1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Book 2",
+      "description": "This is the description of Book 2.",
+      "price": 29.99,
+      "discount": 20,
+      "image": "assets/images/novel2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Book 3",
+      "description": "This is the description of Book 3.",
+      "price": 39.99,
+      "discount": 0,
+      "image": "assets/images/novel3.jpg"
+    }
+  ]
+}

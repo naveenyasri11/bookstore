@@ -1,0 +1,10 @@
+<h2>Book Store</h2>
+<div class="books-container">
+  <div *ngFor="let book of books" class="book-card">
+    <img [src]="myimage1" alt="Book Cover">
+    <h3>{{ products.name }}</h3>
+    <p>{{ products.description }}</p>
+    <p>Price: ${{ products.price }}</p>
+    <p *ngIf="products.discount > 0">Discount: {{ products.discount }}%</p>
+  </div>
+</div>

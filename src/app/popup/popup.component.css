@@ -1,0 +1,48 @@
+.success-message {
+   border:double;
+   border-color: skyblue;
+
+    color: green;
+    font-weight: bold;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+  }
+  h2{
+   
+    margin-left: 260px;
+    font-weight: bold;
+  }
+  button{ 
+    background-color:lightgreen;
+    margin-left: 300px;
+    margin-right: 400px;
+    padding-top: 5px;
+    margin: groove;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 5px;
+    margin-top: 20px;
+  align-items:center;
+  line-height: 30px;
+  margin-right: 60px;
+  padding-left: 30px;
+   padding-right: 40px;
+  font-size: 15px;
+    cursor: pointer;
+    color: green;
+    font-weight: bold;
+  }
+  i{
+    color: green;
+    font-weight: bold;
+    margin-left: 300px;
+    margin-right: 400px;
+   
+  }
+  h3{
+   
+    margin-left: 150px;
+    font-weight: bold;
+  }

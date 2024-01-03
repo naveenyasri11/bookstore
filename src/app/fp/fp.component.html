@@ -1,0 +1,32 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+   <body>
+
+<form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
+  <p class="error-p">{{authError}}</p>
+  <input
+  type="password"
+  class="form-input"
+  name="password"
+  placeholder="Enter new Password"
+  ngModel
+  minlength="8"
+  maxlength="20"
+  #password="ngModel"
+  required
+/>
+<p class="invalid-input"><span *ngIf="password.invalid && password.touched " >No stronger password.Enter atleast 8 characters.</span></p>
+  <input
+  type="password"
+  class="form-input"
+  name="password"
+  placeholder="Confirm Password"
+  ngModel
+  minlength="8"
+  maxlength="20"
+  #password="ngModel"
+  required
+/>
+<p class="invalid-input"><span *ngIf="password.invalid && password.touched " >No stronger password.Enter atleast 8 characters.</span></p>
+<button [disabled]="userLogin.invalid" class="form-button" routerLink="/login">Submit</button>

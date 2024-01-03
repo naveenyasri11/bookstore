@@ -1,0 +1,44 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+   <body>
+    <div class="login">
+        <h2>LOGIN</h2>
+    </div><br>
+<form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
+  <p class="error-p">{{authError}}</p>
+  <h4>E-mail:</h4><br>
+  <input
+  
+    type="text"
+    class="form-input"
+    name="email"
+    placeholder="Enter User Email"
+    ngModel
+    email
+    #email="ngModel"
+    required
+  />
+  <p class="invalid-input"><span *ngIf="email.invalid && email.touched " >Please enter valid E-mail ID </span></p>
+  
+  <h4>Password:</h4><br>
+  <input
+  type="password"
+  class="form-input"
+  name="password"
+  placeholder="Enter User Password"
+  ngModel
+  minlength="8"
+  maxlength="20"
+  #password="ngModel"
+  required
+/>
+<p class="invalid-input"><span *ngIf="password.invalid && password.touched " >No stronger password.Enter atleast 8 characters.</span></p>
+<button [disabled]="userLogin.invalid" class="form-button" routerLink="/product">Login</button>
+<a  style="color:black;margin-top: 10px;" routerLink="/fp">Forgot Password??</a>
+<a  style="color:black;margin-top: 10px;" routerLink="/signup">Are you a new user?? SignUp Here...</a><br>
+</form><br><BR><br><br><br><Br><br><Br><Br>
+    
+
+</body>
+

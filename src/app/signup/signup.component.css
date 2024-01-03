@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    background-image: url("D:\Routing\src\assets\images\signup image.jpg");
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: 966px;
+    padding-top: 60px;
+    margin-top: 10px;
+    padding-left: 200px;
+  
+      padding-right:150px;
+   
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+  }
+  .h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .common-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+  }
+  .form-input {
+    height: 35px;
+    margin-bottom: 30px;
+    border: 1px solid blueviolet;
+    padding-left: 15px;
+    color: blueviolet;
+  }
+  .form-button {
+    height: 35px;
+    border: 1px solid darkorange;
+    color: black;
+    cursor: pointer;
+  }
+  .error-p{
+    color: red;
+  }
+  
+  .message-p{
+    color: green;
+    text-align: center;
+  }
+  
+  .carousel-caption {
+    background-color: #0000007d;
+    border-radius: 10px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 5px;
+  }
+  
+  .invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top:-20px
+  }
+  button:disabled{
+    cursor: not-allowed;
+  }
+  .max-width{
+    width: 100%;
+    }  
+
+
+    .signup{
+        text-align: center;
+        justify-content: center;
+     
+     }
+     button {
+        padding: 10px 20px;
+        background-color:hotpink;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+      h4{
+        font-weight: bold;
+      }

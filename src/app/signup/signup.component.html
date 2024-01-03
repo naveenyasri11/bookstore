@@ -1,0 +1,48 @@
+<body>
+<div class="signup">
+    <h2>SIGNUP</h2>
+</div>
+<form #userLogin="ngForm" class="common-form" (ngSubmit)="login(userLogin.value)">
+  <p class="error-p">{{authError}}</p>
+  <h4>Username:</h4>
+  <input
+  type="text"
+  class="form-input"
+  name="Username"
+  placeholder="Enter Username"
+  ngModel
+  username
+  #username="ngModel"
+  required
+/>
+<p class="invalid-input"><span *ngIf="username.invalid && username.touched " >Please enter valid input</span></p>
+ <h4>E-mail:</h4> 
+<input
+    type="text"
+    class="form-input"
+    name="email"
+    placeholder="Enter User Email"
+    ngModel
+    email
+    #email="ngModel"
+    required
+  />
+  <p class="invalid-input"><span *ngIf="email.invalid && email.touched " >Please enter valid E-mail ID</span></p>
+  <h4>Password:</h4> 
+  <input
+  type="password"
+  class="form-input"
+  name="password"
+  placeholder="Enter User Password"
+  ngModel
+  minlength="8"
+  maxlength="20"
+  #password="ngModel"
+  required
+/>
+<p class="invalid-input"><span *ngIf="password.invalid && password.touched " >No stronger password.Enter atleast 8 characters with one uppercase , lowercase,numbers ,special character</span></p>
+<button [disabled]="userLogin.invalid" class="form-button" routerLink="/login">Signup</button>
+<a  style="color:black;margin-top: 10px;" routerLink="/login">Already an existing user?Login here...</a><br>
+</form>
+</body>
+

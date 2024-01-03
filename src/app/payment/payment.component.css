@@ -1,0 +1,60 @@
+.payment-container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 80px;
+    background-color:peachpuff;
+    border: 1px solid lightgreen;
+    border-radius: 5px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    padding-bottom: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:powderblue;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  a {text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    padding: 11px;
+   margin-top: 10px;
+    padding-left: 10px;
+    background-color:darkseagreen;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,8 @@
+<h2>Book Detail</h2>
+<div *ngIf="product">
+  <img [src]="product.image" alt="Book Cover">
+  <h3>{{ product.name }}</h3>
+  <p>{{ product.description }}</p>
+  <p>Price: ${{ product.price }}</p>
+  <p *ngIf="product.discount > 0">Discount: {{ product.discount }}%</p>
+</div>
